@@ -8,16 +8,18 @@
 
 #logo{
     display:flex;
-    color:white;
+    color:rgb(10, 81, 129);
     align-items: center;   
-    margin: 0 14px;
+    margin: 0 15px;
     font-size: 25px;
     margin-right: 40px;
+    padding: 2px;
+    background-color: white; 
 }
 
 #logo img{
     height: 42px;
-    filter:invert();
+    filter:drop-shadow();
 }
 
 #navbar{
@@ -47,34 +49,64 @@
 }
 
 #introSection{
-    height: 300px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     padding-bottom: 60px;
-    color:white;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Lobster', cursive;
-    font-size: 35px;
-    background: url("/static/bj.jpg");
+    color:darkred;
+    padding: 27px 55px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 55px;
+    font-weight:bold;
+    background: url("/static/img/bj.jpg");
     background-position-x: center;
     background-size:cover;
     background-repeat: no-repeat;
-    /* background-color: rgb(14, 99, 138); */
-    /* background-repeat: no-repeat; */
 }
 
 #introSection div.small{
     padding: 2px;
-    font-size: 24px;
+    font-size: 45px;
+    color:brown;
+    margin-left: -36px;
+    padding-left: 20px;
+}
+
+#introSection div{
+    width: 50%;
+    background-color:mediumspringgreen;
+    border-radius: 10px;
+    margin-left: -36px;
+    margin-bottom: 3px;
+    padding-left: 20px;
+
+}
+
+.btn{
+    padding: 9px 16px;
+    width: 104px;
+    margin: -58px 71px 14px 1168px;
+    font-size: 17px;
+    border-radius: 19px;
+    color:crimson;
+    background-color: rgb(77, 179, 243);
+    border: 2px solid rgb(77, 179, 243);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color:rgb(123, 245, 96);
+    border: 2px solid rgb(123, 245, 96);
+    text-decoration: none;
 }
 
 
 #missionSection{
-    height: 300px;
+    height: 500px;
     margin: auto;
-    width: 67%;
-    background-color:powderblue;
+    width: 100%;
+    background-color:rgb(209, 81, 113);
 }
 
 #missionSection h2{
@@ -84,18 +116,19 @@
 }
 
 .card{
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    border-radius: 12px;
     width: 29%;
-    border-radius: 6px;
     margin: 23px 19px;
-    height: 210px;
     display: inline-block;
+    background-color:powderblue;
+    border-radius: 12px;
 }
 
 .card h3{
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 22px;
+    padding-top: 10px;
+    padding-bottom: 22px;
 }
 
 .card-box{
@@ -111,29 +144,57 @@
 }
 
 .card-content{
-    padding: 0 10px;
+    padding: 2px 18px 16px 6px;
 }
 
 .card-content p{
-    font-size: 17px;
+    font-size: 18px;
 }
 
-
-
-#sponsorsSection{
-    height: 275px;
-    background-color: rgb(247 124 26 / 48%);
+#SupplySection{
+    height: 620px;
+    margin: auto;
+    width: 100%;
+    background: url(/static/img/bj1.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x:left;
+    color:rgb(251, 250, 186);
+    font-size: 18px;
 }
-
-#sponsorsSection h2{
+#SupplySection h2{
     text-align: center;
-    padding-top: 15px;
+    padding-top: 12px;
     font-family: 'Otomanopee One', sans-serif;
+    color: antiquewhite;
 }
-#sponsors{
-    height: 191px;
-    max-width: 1000px;
-    margin: 30px 228px;    
+
+#SupplySection h3{
+    text-align: center;
+    padding-top: 12px;
+    color: antiquewhite;
+}
+
+.card1
+{
+    display: inline-block;
+    width: 50%;
+}
+.card1-content
+{
+    padding: 43px 32px;
+    width: 60%;
+}
+.card1 img{
+    height: 355px;
+    width: 293px;
+    margin-left: 365px;
+}
+.card2
+{
+    padding: 2px 4px;
+    justify-content: center;
+    align-items: center;
 }
 
 .spImage{
